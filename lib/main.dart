@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:pesan_online/pages/Users.dart';
+import 'package:pesan_online/pages/coba.dart';
+import 'package:pesan_online/pages/detailInformasi.dart';
 import 'package:pesan_online/pages/homePage.dart';
+import 'package:pesan_online/pages/infoKurir.dart';
+import 'package:pesan_online/pages/pilihKurir.dart';
+import 'package:pesan_online/pages/pilihLokasi.dart';
+import 'package:pesan_online/pages/register.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Users(),
     );
   }
 }

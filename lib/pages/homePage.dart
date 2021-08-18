@@ -7,6 +7,19 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text(
+          'Informasi Barang',
+          style: TextStyle(fontSize: 18),
+        ),
+      ),
       body: SafeArea(
         bottom: false,
         child: Stack(
@@ -21,7 +34,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 410, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 350, left: 20, right: 20),
               child: Container(
                 height: 270,
                 width: 371,
@@ -198,32 +211,6 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SafeArea(
-              child: Container(
-                width: 411,
-                height: 45,
-                decoration: BoxDecoration(
-                  color: Colors.blue[900],
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: Icon(
-                        Icons.arrow_back,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Center(
-                      child: Text(
-                        'Informasi Barang',
-                        style: TextStyle(color: Colors.white, fontSize: 21),
                       ),
                     ),
                   ],
